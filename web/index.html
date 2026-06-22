@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UnixPilot — Intelligent UNIX/Linux management agent for Claude Code. Safe, idempotent system administration.">
+  <meta name="theme-color" content="#0C0B0A">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="KiddosTech">
+  <link rel="canonical" href="https://unixpilot.pages.dev/">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <title>UnixPilot — Intelligent UNIX/Linux Management</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <div class="logo-mark"></div>
+        UnixPilot
+      </div>
+      <ul class="links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#install">Install</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="https://github.com/KiddosTech/UnixPilot" target="_blank">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-badge">✨ Intelligent UNIX/Linux Management</div>
+    <h1>UnixPilot</h1>
+    <p>A Senior Linux Systems Engineer in your IDE. Safe, idempotent, FHS-compliant system administration powered by Claude Code.</p>
+    <div class="hero-cta">
+      <a href="https://github.com/KiddosTech/UnixPilot" class="btn btn-primary">
+        → View on GitHub
+      </a>
+      <a href="#install" class="btn btn-secondary">
+        ↓ Installation
+      </a>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2 class="section-title">Core Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>🔒 Safety-First</h3>
+        <p>Dry-run preview and explicit confirmation before any destructive operation. No rm -rf without your approval.</p>
+      </div>
+      <div class="card">
+        <h3>📋 FHS Standard</h3>
+        <p>Every path follows the Filesystem Hierarchy Standard. Predictable. POSIX-compliant. Production-ready.</p>
+      </div>
+      <div class="card">
+        <h3>🔄 Idempotent</h3>
+        <p>Every operation is safe to run twice. No side effects. No surprises. Pure systems engineering discipline.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Dotfile Management</h3>
+        <p>GNU Stow integration for managing your .config. Stow, unstow, preview, and verify — all safely.</p>
+      </div>
+      <div class="card">
+        <h3>🖥️ Cross-Platform</h3>
+        <p>Linux, macOS, BSD. Auto-detects your distro, package manager, and shell on session start.</p>
+      </div>
+      <div class="card">
+        <h3>⚡ Auto-Activation</h3>
+        <p>Activates automatically on shell, systemd, cron, SSH, package, and permission tasks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage" id="install">
+    <h2 class="section-title">Installation</h2>
+
+    <div class="usage-item">
+      <h3>Step 1: Register the Marketplace</h3>
+      <p style="margin-bottom: 1rem; color: var(--text-secondary);">Add UnixPilot marketplace to Claude Code:</p>
+      <div class="code-block">
+        <button class="copy-btn" data-copy-id="marketplace-add">Copy</button>
+        <code id="marketplace-add">/plugin marketplace add https://unixpilot.pages.dev/marketplace.json</code>
+      </div>
+    </div>
+
+    <div class="usage-item">
+      <h3>Step 2: Install UnixPilot</h3>
+      <p style="margin-bottom: 1rem; color: var(--text-secondary);">Install the plugin from the marketplace:</p>
+      <div class="code-block">
+        <button class="copy-btn" data-copy-id="plugin-install">Copy</button>
+        <code id="plugin-install">/plugin install unixpilot@unixpilot</code>
+      </div>
+      <p style="color: var(--text-secondary); margin-top: 1rem;">Then restart Claude Code. UnixPilot is active.</p>
+    </div>
+
+    <div class="usage-item">
+      <h3>Alternative: Install from GitHub</h3>
+      <p style="margin-bottom: 1rem; color: var(--text-secondary);">Clone and install locally for development:</p>
+      <div class="code-block">
+        <button class="copy-btn" data-copy-id="local-install">Copy</button>
+        <code id="local-install">git clone https://github.com/KiddosTech/UnixPilot.git
+cd unixpilot
+/plugin add .</code>
+      </div>
+    </div>
+
+    <div class="usage-item">
+      <h3>Requirements</h3>
+      <ul style="list-style-position: inside; color: var(--text-secondary);">
+        <li>Claude Code CLI (latest version)</li>
+        <li>Python 3.7+ (for session hooks)</li>
+        <li>bash or zsh shell</li>
+        <li>stow (optional, for dotfile management)</li>
+      </ul>
+      <div class="code-block" style="margin-top: 1rem;">
+        <button class="copy-btn" data-copy-id="stow-install">Copy</button>
+        <code id="stow-install"># Debian/Ubuntu
+sudo apt install stow
+
+# Arch
+sudo pacman -S stow
+
+# macOS
+brew install stow</code>
+      </div>
+    </div>
+  </section>
+
+  <section class="usage" id="usage">
+    <h2 class="section-title">Usage</h2>
+
+    <div class="usage-item">
+      <h3>Automatic Activation</h3>
+      <p style="color: var(--text-secondary); margin-bottom: 1rem;">Just ask Claude about UNIX/Linux tasks. UnixPilot activates automatically:</p>
+      <blockquote style="padding: 1rem; background: var(--bg-card); border-left: 3px solid var(--accent); border-radius: 0.5rem; color: var(--text-secondary);">
+        <strong style="color: var(--text-primary);">User:</strong> "How do I safely change permissions on /etc/ssh/sshd_config?"<br><br>
+        <strong style="color: var(--accent);">UnixPilot:</strong> Activates with FHS, POSIX, and safety rules. Shows dry-run. Asks for confirmation.
+      </blockquote>
+    </div>
+
+    <div class="usage-item">
+      <h3>Manual Activation</h3>
+      <div class="code-block">
+        <button class="copy-btn" data-copy-id="cmd-unixpilot">Copy</button>
+        <code id="cmd-unixpilot">/unixpilot [task description]</code>
+      </div>
+      <p style="color: var(--text-secondary); margin-top: 1rem;">Example: <span class="kbd">/unixpilot stow my nvim config</span></p>
+    </div>
+
+    <div class="usage-item">
+      <h3>Dotfile Management</h3>
+      <p style="color: var(--text-secondary); margin-bottom: 1rem;">Dedicated dotfile mode with GNU Stow:</p>
+      <div class="code-block">
+        <button class="copy-btn" data-copy-id="cmd-dotfiles">Copy</button>
+        <code id="cmd-dotfiles">/unixpilot-dotfiles [stow|unstow|list] [package]</code>
+      </div>
+    </div>
+  </section>
+
+  <section class="safety">
+    <h2>Safety Guarantees</h2>
+    <p style="color: var(--text-secondary); margin-bottom: 1rem;">UnixPilot blocks without confirmation:</p>
+    <ul class="safety-list">
+      <li>rm -rf / and variants</li>
+      <li>mkfs (filesystem format)</li>
+      <li>dd if=… of=/dev/sd* (raw disk writes)</li>
+      <li>chmod 777 on system paths</li>
+      <li>Anything touching /boot, /etc/fstab, /etc/shadow</li>
+      <li>Block device operations without dry-run</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Made for power users who demand precision, safety, and correctness.</p>
+    <p style="margin-top: 1rem;">
+      <a href="https://github.com/KiddosTech/UnixPilot">GitHub</a> •
+      <a href="https://github.com/KiddosTech/UnixPilot/blob/main/LICENSE">MIT License</a> •
+      <a href="https://github.com/KiddosTech/UnixPilot/issues">Issues</a>
+    </p>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+  <noscript>
+    <p style="text-align: center; color: var(--text-secondary); padding: 2rem;">
+      This site works best with JavaScript enabled. Some features may not work without it.
+    </p>
+  </noscript>
+</body>
+</html>
