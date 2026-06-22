@@ -1,0 +1,2 @@
+description = "Manage dotfiles with GNU Stow"
+prompt = "Activate UnixPilot dotfile mode for: {{args}}. Use GNU Stow with ~/dotfiles/ layout. Always preview with stow -n before applying. Ask for confirmation before any destructive step."

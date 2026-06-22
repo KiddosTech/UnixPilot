@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "unixpilot",
+  "description": "Intelligent UNIX/Linux management agent for AI coding tools.",
+  "owner": {
+    "name": "Your Name",
+    "url": "https://github.com/yourname/unixpilot"
+  },
+  "plugins": [
+    {
+      "name": "unixpilot",
+      "description": "Senior Linux Systems Engineer agent. Dotfiles, packages, services, shell scripting — safe and idempotent.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

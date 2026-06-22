@@ -1,0 +1,7 @@
+{
+  "name": "unixpilot",
+  "version": "0.1.0",
+  "description": "Intelligent UNIX/Linux management agent for AI coding tools.",
+  "keywords": ["skills", "unix", "linux", "agent", "dotfiles", "sysadmin"],
+  "license": "MIT"
+}

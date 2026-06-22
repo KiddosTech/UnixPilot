@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 100" width="520" height="100" role="img" aria-label="UnixPilot">
+  <defs>
+    <style>
+      .wm {
+        font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace;
+        font-weight: 700;
+        font-size: 52px;
+        letter-spacing: 0.08em;
+        fill: #F0EDE8;
+      }
+      .sub {
+        font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', Consolas, 'Courier New', monospace;
+        font-weight: 400;
+        font-size: 11px;
+        letter-spacing: 0.35em;
+        fill: #6B6560;
+      }
+    </style>
+  </defs>
+
+  <!-- Dark background -->
+  <rect width="520" height="100" fill="#0C0B0A" rx="12"/>
+
+  <!-- UNIX wordmark -->
+  <text class="wm" x="28" y="62">UNIX</text>
+
+  <!-- Claude-style 4-pointed sparkle — drawn as path, not text -->
+  <!-- Center at (244, 51), outer R=19, inner r=4.5 -->
+  <polygon
+    points="244,32 248.5,46.5 263,51 248.5,55.5 244,70 239.5,55.5 225,51 239.5,46.5"
+    fill="#CF7D5C"/>
+
+  <!-- PILOT wordmark -->
+  <text class="wm" x="272" y="62">PILOT</text>
+
+  <!-- Tagline -->
+  <text class="sub" x="28" y="86">INTELLIGENT UNIX MANAGEMENT VIA MCP</text>
+</svg>

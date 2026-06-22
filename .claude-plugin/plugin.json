@@ -1,0 +1,10 @@
+{
+  "name": "unixpilot",
+  "version": "0.1.0",
+  "description": "Intelligent UNIX/Linux management agent. Activates on shell, dotfile, package, service, and sysadmin tasks.",
+  "author": {
+    "name": "Your Name",
+    "url": "https://github.com/yourname/unixpilot"
+  },
+  "hooks": "./hooks/claude-codex-hooks.json"
+}
