@@ -1,17 +1,50 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "unixpilot",
-  "description": "Intelligent UNIX/Linux management agent for AI coding tools.",
-  "owner": {
-    "name": "KiddosTech/Ahmad Ilham Kurniawan",
-    "url": "https://github.com/KiddosTech/unixpilot"
+  "namespace": "unixpilot",
+  "name": "UnixPilot",
+  "displayName": "UnixPilot",
+  "version": "0.1.0",
+  "description": "Intelligent UNIX/Linux management agent for Claude Code. Safe, idempotent, FHS-compliant system administration.",
+  "longDescription": "UnixPilot is a Claude Code plugin that transforms your AI assistant into a Senior Linux Systems Engineer. It activates automatically on shell, dotfile, package, and system administration tasks — and enforces FHS standards, POSIX compliance, safety-first execution, and idempotent operations by default.\n\nFeatures:\n- Auto-activation on UNIX/Linux topics\n- FHS-first path decisions\n- POSIX-compliant by default\n- Safety-enforced: dry-run + confirmation before destructive ops\n- Idempotent operations\n- GNU Stow dotfile management\n- Cross-platform (Linux, macOS, BSD)\n- System auto-detection",
+  "author": {
+    "name": "KiddosTech",
+    "url": "https://github.com/KiddosTech"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KiddosTech/UnixPilot.git"
+  },
+  "license": "MIT",
+  "homepage": "https://unixpilot.pages.dev",
+  "bugs": {
+    "url": "https://github.com/KiddosTech/UnixPilot/issues"
+  },
+  "keywords": [
+    "unix",
+    "linux",
+    "sysadmin",
+    "dotfiles",
+    "shell",
+    "systemd",
+    "safety",
+    "agent",
+    "fhs",
+    "posix"
+  ],
   "plugins": [
     {
       "name": "unixpilot",
-      "description": "Senior Linux Systems Engineer agent. Dotfiles, packages, services, shell scripting — safe and idempotent.",
-      "source": "./",
-      "category": "productivity"
+      "displayName": "UnixPilot",
+      "description": "Senior Linux Systems Engineer agent. Activates on shell, dotfiles, packages, systemd, and sysadmin tasks.",
+      "category": "productivity",
+      "source": "https://github.com/KiddosTech/UnixPilot",
+      "icon": "https://unixpilot.pages.dev/assets/icon.svg"
+    }
+  ],
+  "screenshots": [
+    {
+      "url": "https://unixpilot.pages.dev/assets/logo.svg",
+      "alt": "UnixPilot logo — UNIX ✴ PILOT"
     }
   ]
 }

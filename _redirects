@@ -1,0 +1,14 @@
+# Cloudflare Pages redirect and rewrite rules
+# Reference: https://developers.cloudflare.com/pages/platform/redirects/
+
+# Serve marketplace.json
+/marketplace.json  /marketplace.json  200
+
+# Serve web assets from root
+/index.html        /web/index.html    200
+/styles.css        /web/styles.css    200
+/robots.txt        /web/robots.txt    200
+/js/*              /web/js/:splat     200
+
+# Fallback to web/index.html for SPA routing
+/*                 /web/index.html    200

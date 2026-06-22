@@ -1,0 +1,3 @@
+Contact: https://github.com/KiddosTech/UnixPilot/issues
+Security-Policy: https://github.com/KiddosTech/UnixPilot/security/policy
+Preferred-Languages: en
