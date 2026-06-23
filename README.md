@@ -39,12 +39,16 @@ Never run a destructive command blindly again. UnixPilot previews, dry-runs, and
 
 ### Via Claude Code Marketplace (recommended)
 ```bash
-/plugin add yourname/unixpilot
+/plugin marketplace add https://unixpilot.pages.dev/marketplace.json
+/plugin install unixpilot@unixpilot
+
 ```
 
-### Or install directly from this repo
+### Or install with Git
 ```bash
-/plugin add D:/path/to/unixpilot
+git clone https://github.com/KiddosTech/UnixPilot.git
+cd unixpilot
+/plugin add .
 ```
 
 Then restart Claude Code. UnixPilot is active.
